@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://orbyx-rush.vercel.app/sitemap.xml

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Orbyx Rush native colours. These mirror src/game/config/palette.ts; change
+  both together.
+-->
+<resources>
+    <color name="colorPrimary">#22E6FF</color>
+    <color name="colorPrimaryDark">#04070F</color>
+    <color name="colorAccent">#9D5CFF</color>
+    <color name="orbyxVoid">#04070F</color>
+</resources>

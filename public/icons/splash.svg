@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#0a1526"/>
+      <stop offset="100%" stop-color="#04070f"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <g transform="translate(540 830)">
+    <ellipse rx="230" ry="230" fill="none" stroke="url(#ring)" stroke-width="7" stroke-dasharray="18 30" opacity="0.45"/>
+    <ellipse rx="230" ry="96" fill="none" stroke="url(#ring)" stroke-width="9" transform="rotate(-28)" opacity="0.9"/>
+    <path d="M0 -102 L88 -51 L88 51 L0 102 L-88 51 L-88 -51 Z" fill="#132436" stroke="#22e6ff" stroke-width="9" stroke-linejoin="round"/>
+    <circle cx="176" cy="-138" r="72" fill="#22e6ff" opacity="0.15"/>
+    <circle cx="176" cy="-138" r="38" fill="url(#orb)"/>
+  </g>
+  <text x="540" y="1200" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="96" font-weight="900" letter-spacing="24" fill="#22e6ff">ORBYX</text>
+  <text x="540" y="1276" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="52" font-weight="700" letter-spacing="60" fill="#9d5cff">RUSH</text>
+  <text x="540" y="1800" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="26" letter-spacing="8" fill="#5b7086">DEVHIVE SOFTWARE</text>
+</svg>

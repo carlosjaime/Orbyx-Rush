@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Orbyx Rush">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#0d1a2b"/>
+      <stop offset="100%" stop-color="#04070f"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <ellipse cx="256" cy="256" rx="176" ry="176" fill="none" stroke="url(#ring)" stroke-width="10" stroke-dasharray="26 38" opacity="0.5"/>
+  <ellipse cx="256" cy="256" rx="176" ry="74" fill="none" stroke="url(#ring)" stroke-width="12" transform="rotate(-28 256 256)" opacity="0.95"/>
+  <path d="M256 178 L323 217 L323 295 L256 334 L189 295 L189 217 Z" fill="#132436" stroke="#22e6ff" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="256" cy="256" r="26" fill="#22e6ff" opacity="0.35"/>
+  <circle cx="390" cy="150" r="56" fill="#22e6ff" opacity="0.16"/>
+  <circle cx="390" cy="150" r="30" fill="url(#orb)"/>
+</svg>

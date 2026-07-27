@@ -1,0 +1,51 @@
+{
+  "name": "Orbyx Rush",
+  "short_name": "Orbyx",
+  "description": "Arcade espacial 2D de precisión y ritmo. Orbita, suéltate en el momento exacto y encadena capturas perfectas.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
+  "orientation": "portrait",
+  "background_color": "#04070f",
+  "theme_color": "#04070f",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Reto diario",
+      "short_name": "Reto",
+      "url": "/?mode=daily",
+      "description": "Juega el reto diario de hoy"
+    }
+  ]
+}

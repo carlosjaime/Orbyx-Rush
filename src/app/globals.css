@@ -1,0 +1,227 @@
+@import 'tailwindcss';
+
+/*
+ * Orbyx Rush design tokens.
+ * Mirrors src/game/config/palette.ts — change both together.
+ */
+@theme {
+  --color-void: #04070f;
+  --color-void-soft: #070d1c;
+  --color-surface: #0d1a2b;
+  --color-surface-raised: #132436;
+  --color-surface-border: #1d3a52;
+  --color-primary: #22e6ff;
+  --color-primary-dim: #0e93a8;
+  --color-secondary: #9d5cff;
+  --color-secondary-dim: #5f30ad;
+  --color-magenta: #ff3ea5;
+  --color-ember: #ff9d2e;
+  --color-success: #43f5a5;
+  --color-danger: #ff5470;
+  --color-warning: #ffd166;
+  --color-ink: #e8f4ff;
+  --color-ink-muted: #8fa6bd;
+  --color-ink-faint: #5b7086;
+
+  --font-display: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+
+  --radius-panel: 1.25rem;
+  --radius-chip: 0.75rem;
+}
+
+/* High contrast overrides, toggled from the settings store. */
+:root[data-high-contrast='true'] {
+  --color-primary: #4fd1ff;
+  --color-secondary: #ffffff;
+  --color-magenta: #ffb703;
+  --color-ember: #ffd166;
+  --color-success: #ffffff;
+  --color-danger: #ff8c1a;
+  --color-ink: #ffffff;
+  --color-ink-muted: #c9d8e6;
+  --color-surface: #000913;
+  --color-surface-border: #4a7ea8;
+}
+
+:root {
+  color-scheme: dark;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-void);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  /* The game owns every gesture inside the canvas. */
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* Never let the page itself scroll: it fights the canvas on mobile. */
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  touch-action: manipulation;
+}
+
+/* Pages outside the game (privacy, credits, offline) are documents, not games. */
+body[data-document='true'] {
+  position: static;
+  overflow-y: auto;
+  touch-action: auto;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root[data-reduced-motion='true'] *,
+:root[data-reduced-motion='true'] *::before,
+:root[data-reduced-motion='true'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* Focus ring: always visible for keyboard users, never for pointer users. */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+/*
+ * `safe-area` carries ONLY the device insets and must not be combined with
+ * p-*/
+px-*/py-* on the same element — they target the same properties and the * later declaration wins,
+silently
+  dropping
+  one
+  of
+  them.
+  Put
+  it
+  on
+  a
+  wrapper
+  *
+  and
+  let
+  children
+  own
+  their
+  visual
+  padding.
+  */
+  @utility
+  safe-area {
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+}
+
+/* Additive variant for standalone document pages (privacy, offline, 404). */
+@utility safe-block {
+  padding-top: calc(var(--safe-top) + 2.5rem);
+  padding-bottom: calc(var(--safe-bottom) + 2.5rem);
+  padding-left: calc(var(--safe-left) + 1.5rem);
+  padding-right: calc(var(--safe-right) + 1.5rem);
+}
+
+@utility panel-surface {
+  background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-panel);
+  backdrop-filter: blur(14px);
+}
+
+@utility neon-text {
+  text-shadow:
+    0 0 12px color-mix(in srgb, currentColor 60%, transparent),
+    0 0 34px color-mix(in srgb, currentColor 28%, transparent);
+}
+
+@keyframes orbyx-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orbyx-pop {
+  0% {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes orbyx-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: orbyx-fade-in 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-pop {
+  animation: orbyx-pop 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-soft-pulse {
+  animation: orbyx-pulse 2.4s ease-in-out infinite;
+}
+
+/* Scrollable panel bodies keep a slim, dark scrollbar. */
+.scroll-panel {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-surface-border) transparent;
+}
+
+.scroll-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-panel::-webkit-scrollbar-thumb {
+  background: var(--color-surface-border);
+  border-radius: 999px;
+}

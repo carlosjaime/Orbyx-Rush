@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="25%" r="85%">
+      <stop offset="0%" stop-color="#0e1e33"/>
+      <stop offset="100%" stop-color="#04070f"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#22e6ff"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(895 315)">
+    <ellipse rx="200" ry="200" fill="none" stroke="url(#ring)" stroke-width="6" stroke-dasharray="16 26" opacity="0.4"/>
+    <ellipse rx="200" ry="84" fill="none" stroke="url(#ring)" stroke-width="8" transform="rotate(-28)" opacity="0.9"/>
+    <path d="M0 -88 L76 -44 L76 44 L0 88 L-76 44 L-76 -44 Z" fill="#132436" stroke="#22e6ff" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="152" cy="-120" r="60" fill="#22e6ff" opacity="0.16"/>
+    <circle cx="152" cy="-120" r="32" fill="url(#orb)"/>
+  </g>
+  <text x="90" y="270" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="104" font-weight="900" letter-spacing="14" fill="#22e6ff">ORBYX</text>
+  <text x="90" y="352" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="60" font-weight="700" letter-spacing="42" fill="#9d5cff">RUSH</text>
+  <text x="92" y="424" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="27" fill="#8fa6bd">Arcade orbital de precisión · Gratis · Sin anuncios</text>
+  <text x="92" y="560" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" letter-spacing="6" fill="#5b7086">DEVHIVE SOFTWARE</text>
+</svg>
