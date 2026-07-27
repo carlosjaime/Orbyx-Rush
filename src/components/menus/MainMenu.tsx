@@ -116,8 +116,8 @@ export function MainMenu() {
         </div>
 
         <p className="text-ink-faint text-center text-[10px] leading-relaxed">
-          Desarrollado por DevHive Software
-          <br />© 2026 DevHive Software. Todos los derechos reservados.
+          Desarrollado por RCMX
+          <br />© 2026 RCMX. Todos los derechos reservados.
         </p>
       </div>
     </div>

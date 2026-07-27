@@ -1,6 +1,6 @@
 # Política de privacidad — Orbyx Rush
 
-**Responsable:** DevHive Software
+**Responsable:** RCMX
 **Aplicación:** Orbyx Rush (web, Android e iOS)
 **Versión:** 1.0.0 · Última actualización: 2026
 
@@ -146,4 +146,4 @@ Consultas sobre privacidad: **privacidad@devhive.software**
 
 ---
 
-© 2026 DevHive Software. Todos los derechos reservados.
+© 2026 RCMX. Todos los derechos reservados.

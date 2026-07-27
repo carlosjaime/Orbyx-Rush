@@ -48,7 +48,7 @@ export default function OfflinePage() {
         Reintentar
       </Link>
 
-      <p className="text-ink-faint text-[10px] tracking-[0.2em] uppercase">DevHive Software</p>
+      <p className="text-ink-faint text-[10px] tracking-[0.2em] uppercase">RCMX</p>
     </div>
   );
 }

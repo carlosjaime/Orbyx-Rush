@@ -25,7 +25,7 @@ test.describe('Orbyx Rush — core flow', () => {
     await expect(page.getByText('ORBYX', { exact: true })).toBeVisible();
     await expect(page.getByText('Récord')).toBeVisible();
     await expect(page.getByText(/Nivel 1/)).toBeVisible();
-    await expect(page.getByText(/DevHive Software/).first()).toBeVisible();
+    await expect(page.getByText(/RCMX/).first()).toBeVisible();
 
     expect(consoleErrors, `console errors: ${consoleErrors.join(' | ')}`).toHaveLength(0);
   });

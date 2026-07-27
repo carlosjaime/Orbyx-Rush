@@ -22,7 +22,7 @@ export function CreditsScreen() {
         <Card className="w-full text-left">
           <p className="text-ink text-sm leading-relaxed">
             Diseño, programación, dirección de arte y audio:{' '}
-            <strong className="text-primary">DevHive Software</strong>.
+            <strong className="text-primary">RCMX</strong>.
           </p>
           <p className="text-ink-muted mt-3 text-xs leading-relaxed">
             Todos los gráficos son vectoriales y se generan en tiempo de ejecución. Todos los
@@ -42,8 +42,8 @@ export function CreditsScreen() {
         </Card>
 
         <p className="text-ink-faint text-xs leading-relaxed">
-          Desarrollado por DevHive Software.
-          <br />© 2026 DevHive Software. Todos los derechos reservados.
+          Desarrollado por RCMX.
+          <br />© 2026 RCMX. Todos los derechos reservados.
         </p>
       </div>
     </ScreenPanel>

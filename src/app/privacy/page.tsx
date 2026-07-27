@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           Política de privacidad
         </h1>
         <p className="text-ink-faint mt-2 text-xs">
-          Orbyx Rush · DevHive Software · Última actualización: 2026
+          Orbyx Rush · RCMX · Última actualización: 2026
         </p>
 
         <Section title="1. Resumen">
@@ -79,9 +79,7 @@ export default function PrivacyPage() {
           Para cualquier consulta sobre privacidad puedes escribir a privacidad@devhive.software.
         </Section>
 
-        <p className="text-ink-faint mt-10 text-xs">
-          © 2026 DevHive Software. Todos los derechos reservados.
-        </p>
+        <p className="text-ink-faint mt-10 text-xs">© 2026 RCMX. Todos los derechos reservados.</p>
       </article>
     </div>
   );

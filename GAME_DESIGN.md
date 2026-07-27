@@ -1,6 +1,6 @@
 # Game Design Document — Orbyx Rush
 
-Versión 1.0.0 · DevHive Software · 2026
+Versión 1.0.0 · RCMX · 2026
 
 ---
 

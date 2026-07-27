@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description:
     'Orbyx Rush es un arcade espacial 2D de partidas rápidas: orbita, suéltate en el momento exacto y encadena capturas perfectas. Gratis, sin anuncios y jugable con una sola mano.',
   applicationName: 'Orbyx Rush',
-  authors: [{ name: 'DevHive Software' }],
-  creator: 'DevHive Software',
-  publisher: 'DevHive Software',
+  authors: [{ name: 'RCMX' }],
+  creator: 'RCMX',
+  publisher: 'RCMX',
   keywords: [
     'Orbyx Rush',
     'juego arcade',

@@ -3,8 +3,8 @@
 **Arcade orbital 2D de precisión, ritmo y reflejos.** Gratis, sin anuncios, sin
 compras y jugable con una sola mano.
 
-> Desarrollado por DevHive Software.
-> © 2026 DevHive Software. Todos los derechos reservados.
+> Desarrollado por RCMX.
+> © 2026 RCMX. Todos los derechos reservados.
 
 ---
 
@@ -296,11 +296,14 @@ tienen interfaz visible en esta versión.
 
 ## 16. Licencias
 
-- Código de Orbyx Rush: © 2026 DevHive Software. Todos los derechos reservados.
+- Código de Orbyx Rush: © 2026 RCMX. Todos los derechos reservados.
 - Dependencias de terceros: cada una bajo su propia licencia de código abierto
   (Next.js, React, Phaser, Tailwind CSS y Capacitor bajo MIT).
 - **No se incluye ningún asset gráfico o sonoro de terceros.** Todo el arte se
   genera por código y todo el audio se sintetiza en tiempo de ejecución.
+
+Estas menciones aparecen también dentro del juego, en el menú principal, en la
+pantalla de Créditos, en la pantalla de carga y en la política de privacidad.
 
 ---
 

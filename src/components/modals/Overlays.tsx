@@ -38,7 +38,7 @@ export function SplashOverlay() {
           style={{ width: `${Math.round(progress * 100)}%` }}
         />
       </div>
-      <p className="text-ink-faint text-[10px] tracking-[0.2em] uppercase">DevHive Software</p>
+      <p className="text-ink-faint text-[10px] tracking-[0.2em] uppercase">RCMX</p>
     </div>
   );
 }
